@@ -43,10 +43,12 @@ export default {
       this.$refs.loginForm.validate((valid)=>{
         if(valid){
           postRequest("/login",this.loginForm).then(resp=>{
-            alert(resp);
+            if (resp){
+              this.$router.replace('/home');
+            }
           })
         }else {
-          alert((222));
+
           return false;
         }
       })

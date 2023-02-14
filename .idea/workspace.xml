@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d07ce050-7f71-41df-ba6b-5c33dc38cd25" name="变更" comment="1" />
+    <list default="true" id="d07ce050-7f71-41df-ba6b-5c33dc38cd25" name="变更" comment="1">
+      <change afterPath="$PROJECT_DIR$/selclass-client/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/toLogin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/toLogin.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +26,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Vue Single File Component" />
         <option value="JavaScript File" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -25,7 +38,7 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/selclass-client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -69,17 +82,24 @@
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/15359/IdeaProjects/selclass/selclass-server/src/main/java/com/fkczxt/selclassserver&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.excludes&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;5d03f0a9c446fe99de66bf3502c279af&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -102,7 +122,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SelclassApplication (1)">
+  <component name="RunManager" selected="npm.run">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:8080">
       <method v="2" />
     </configuration>
@@ -167,7 +187,18 @@
       <workItem from="1675488174049" duration="921000" />
       <workItem from="1675489172293" duration="352000" />
       <workItem from="1675489534052" duration="12000" />
-      <workItem from="1675489563491" duration="176000" />
+      <workItem from="1675489563491" duration="251000" />
+      <workItem from="1675778248926" duration="139000" />
+      <workItem from="1676204395992" duration="465000" />
+      <workItem from="1676205369511" duration="310000" />
+      <workItem from="1676205972267" duration="183000" />
+      <workItem from="1676248927687" duration="8192000" />
+      <workItem from="1676258798711" duration="1816000" />
+      <workItem from="1676260654233" duration="722000" />
+      <workItem from="1676261388856" duration="1366000" />
+      <workItem from="1676262780567" duration="75000" />
+      <workItem from="1676264513942" duration="2988000" />
+      <workItem from="1676276420738" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="登录">
       <created>1675485363964</created>
@@ -289,11 +320,6 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/LoginController.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/UserServiceImpl.java</url>
           <line>62</line>
           <option name="timeStamp" value="6" />
@@ -315,5 +341,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

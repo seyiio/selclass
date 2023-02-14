@@ -2,7 +2,10 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
-    <content url="file://$MODULE_DIR$/selclass-client" />
+    <content url="file://$MODULE_DIR$/selclass-client">
+      <excludeFolder url="file://$MODULE_DIR$/selclass-client/node_modules/@element-plus/icons-vue" />
+    </content>
+    <content url="file://$MODULE_DIR$/selclass-client/node_modules/@element-plus/icons-vue" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
