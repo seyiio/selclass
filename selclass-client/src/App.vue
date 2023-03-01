@@ -2,11 +2,10 @@
 <div id ="app">
   <router-view/>
 </div>
+
 </template>
 
-<script>
-
-
+<script lang="ts">
 </script>
 
 <style>

@@ -1,6 +1,16 @@
 import axios from "axios";
 import { ElMessage  } from 'element-plus'
 import router from "@/router";
+axios.interceptors.request.use(config => {
+    // 如果存在 token，请求携带这个 token( 登录的时候 把 token 存入了 sessionStorage ）
+    if (window.sessionStorage.getItem("tokenStr")) {
+        // token 的key : Authorization ; value: tokenStr
+        config.headers['Authorization'] = window.sessionStorage.getItem('tokenStr')
+    }
+    return config;
+},error => {
+    console.log(error)
+})
 axios.interceptors.response.use(success=>{
     if(success.status&&success.status==200){
         if (success.data.code==500||success.data.code==401||success.data.code==401){
@@ -39,4 +49,29 @@ export const postRequest=(url,params)=>{
         data:params,
     })
 
+}
+export const getRequest = (url, params) => {
+    return axios({
+        method: 'get',
+        url: url,
+        data: params
+    })
+}
+
+// 传送 json 格式的 put 请求
+export const putRequest = (url, params) => {
+    return axios({
+        method: 'put',
+        url: url,
+        data: params
+    })
+}
+
+// 传送 json 格式的 delete 请求
+export const deleteRequest = (url, params) => {
+    return axios({
+        method: 'delete',
+        url: url,
+        data: params
+    })
 }

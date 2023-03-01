@@ -28,7 +28,7 @@ export default {
   data(){
     return{
     loginForm: {
-      username: '',
+      username:'',
       password:'',
 
     },
@@ -41,12 +41,27 @@ export default {
   methods:{
     submitLogin(){
       this.$refs.loginForm.validate((valid)=>{
-        if(valid){
-          postRequest("/login",this.loginForm).then(resp=>{
-            alert(resp);
+        if (valid) {
+          // alert('submit!')
+          postRequest('/login', this.loginForm).then(resp => {
+            // alert(JSON.stringify(resp));
+
+            if (resp) {
+              // 存储用户 token 到 sessionStorage
+              const tokenStr = resp.obj.tokenHead + resp.obj.token
+              window.sessionStorage.setItem('tokenStr', tokenStr)
+              // 跳转到首页
+              // this.$router.push('/home') // 路由跳转，可以回退到上一页
+              // this.$router.replace('/home') // 路径替换，无法回退到上一页
+              // 页面跳转
+              // 拿到用户要跳转的路径
+              let path = this.$route.query.redirect;
+              // 用户可能输入首页地址或错误地址，让他跳到首页，否则跳转到他输入的地址
+              this.$router.replace((path === '/' || path === undefined) ? '/home' : path)
+            }
           })
         }else {
-          alert((222));
+
           return false;
         }
       })
