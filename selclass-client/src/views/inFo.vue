@@ -5,7 +5,7 @@
       :column="4"
       border
   >
-    <el-descriptions-item label="姓名"><span v-text="username"></span></el-descriptions-item>
+    <el-descriptions-item label="姓名"><span v-text="name"></span></el-descriptions-item>
     <el-descriptions-item label="年级"><span v-text="grade"></span></el-descriptions-item>
     <el-descriptions-item label="专业" :span="2"><span v-text="major"></span></el-descriptions-item>
     <el-descriptions-item label="手机号"><span v-text="phone"></span></el-descriptions-item>
@@ -26,6 +26,7 @@ export default {
     this.grade=dataa.grade;
     this.faculty=dataa.faculty;
     this.phone=dataa.phone;
+    this.name=dataa.name;
         }
     )
   },
@@ -36,6 +37,7 @@ export default {
         faculty:"",
         grade:"",
         phone:"",
+        name:"",
     }
 }
 }

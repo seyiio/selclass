@@ -1,19 +1,65 @@
 <template>
-  <el-table :data="tableData" style="width: 100%">
-    <el-table-column prop="classname " label="课程名称" width="180" />
+  <el-table :data="tableData" style="width: 100%" v-if="time">
+    <el-table-column prop="classname" label="课程名称" width="180" />
     <el-table-column prop="point" label="学分" width="180" />
-    <el-table-column prop="address" label="任课老师" />
-    <el-table-column prop="number" label="剩余数量" />
+    <el-table-column prop="time" label="时间" width="168"/>
+    <el-table-column prop="teachername" label="任课老师" />
+    <el-table-column prop="selected" label="剩余数量" />
+    <el-table-column fixed="right" label="操作" width="120">
+      <template #default="scope">
+        <el-button
+            link
+            type="primary"
+            size="small"
+            @click.prevent="deleteRow(scope.$index)"
+        >
+          选课
+        </el-button>
+      </template>
+    </el-table-column>
   </el-table>
+  <el-result
+      v-else
+      icon="error"
+      title="当前还不是选课时间"
+      sub-title="请稍后再来"
+  >
+  </el-result>
 </template>
 
 <script>
-export default {
+import {getRequest} from "@/utils/api";
 
+export default {
+created() {
+  getRequest('/time/selclasstime').then(data=>{
+    if(new Date(data.starttime).getTime()<=new Date().getTime()&&new Date(data.endtime).getTime()>=new Date().getTime()){
+      this.time=true;
+      getRequest("/class/getclass").then(data=>{
+        if (data){
+          let selclasss = []
+          data.forEach(selclass=>{
+            let{classname,point,teachername,selected,number,time}=selclass;
+            let aclass={
+              classname:classname,
+              point:point,
+              teachername:teachername,
+              selected:number-selected,
+              time:time
+            }
+            selclasss.push(aclass)
+          });
+          this.tableData=selclasss;
+        }
+      })
+    }else this.time=false;
+  })
+},
   name: "seClass",
   data() {
     return {
-      tableData: []
+      tableData: [],
+      time:false,
     }
 }}
 </script>

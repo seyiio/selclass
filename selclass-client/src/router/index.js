@@ -6,6 +6,7 @@ import timeTable from "@/views/Timetable.vue";
 import info from "@/views/inFo.vue";
 import classPoint from "@/views/classPoint.vue";
 import aclass from "@/views/aClass.vue"
+import selclasstime from "@/views/selclasstime.vue";
 const routerHistory = createWebHistory()
 
 const router = createRouter({
@@ -45,6 +46,11 @@ routes:[
             {path:'/aclass',
                 name:'aclass',
                 component:aclass
+
+            },
+            {path:'/selclasstime',
+                name:'selclasstime',
+                component:selclasstime
 
             }]
     }  ,

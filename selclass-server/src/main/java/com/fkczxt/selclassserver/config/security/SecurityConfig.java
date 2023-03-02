@@ -76,7 +76,7 @@ public class SecurityConfig{
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer(){
         return(web)->web.ignoring().antMatchers("/login","/doc.html",
-                "/css/*","/js/**","/index.html","favicon.ico","/webjars/**","/swagger-resources/**","/v2/api-docs/**","/hello");
+                "/css/*","/js/**","/index.html","favicon.ico","/webjars/**","/swagger-resources/**","/v2/api-docs/**");
     }
     @Bean
     public JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter(){

@@ -34,4 +34,6 @@ public class Class implements Serializable {
     private Integer number;
 
     private String time;
+    private String teachername;
+    private Integer selected;
 }

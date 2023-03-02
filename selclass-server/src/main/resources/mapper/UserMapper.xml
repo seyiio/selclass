@@ -12,6 +12,7 @@
         <result column="grade" property="grade" />
         <result column="phone" property="phone" />
         <result column="tpye" property="tpye" />
+        <result column="name" property="name" />
     </resultMap>
 
 </mapper>

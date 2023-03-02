@@ -43,6 +43,7 @@ public class User implements Serializable , UserDetails {
     private String phone;
 
     private String type;
+    private String name;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

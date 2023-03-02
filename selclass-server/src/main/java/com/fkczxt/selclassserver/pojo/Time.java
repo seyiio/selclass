@@ -3,6 +3,8 @@ package com.fkczxt.selclassserver.pojo;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Date;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
@@ -27,4 +29,8 @@ public class Time implements Serializable {
     private LocalDateTime starttime;
 
     private LocalDateTime endtime;
+    public Time(LocalDateTime s,LocalDateTime e){
+        starttime=s;
+        endtime=e;
+    }
 }

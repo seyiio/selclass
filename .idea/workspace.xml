@@ -5,43 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d07ce050-7f71-41df-ba6b-5c33dc38cd25" name="变更" comment="home等页面添加">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/474ceb53-7744-40e1-9912-68a50c4b7a47.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/474ceb53-7744-40e1-9912-68a50c4b7a47/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/474ceb53-7744-40e1-9912-68a50c4b7a47/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/474ceb53-7744-40e1-9912-68a50c4b7a47/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/474ceb53-7744-40e1-9912-68a50c4b7a47/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-client/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-client/src/utils/menus.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-client/src/views/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-client/src/views/Timetable.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-client/src/views/aClass.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-client/src/views/classPoint.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-client/src/views/inFo.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-client/src/views/selclass.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/TimeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/mapper/TimeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/Time.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/ITimeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/ITimeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/TimeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-server/src/main/resources/mapper/TimeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selclass-client/src/views/selclasstime.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selclass-client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/utils/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/toLogin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/toLogin.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/security/JwtAuthenticationTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/security/JwtAuthenticationTokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/security/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/security/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/inFo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/inFo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/selclass.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/selclass.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/ClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/ClassController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/TimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/TimeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/mapper/ClassMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/mapper/ClassMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/mapper/TimeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/mapper/TimeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/Class.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/Cs.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/Cs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/Time.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/IClassService.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/IClassService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/ITimeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/ITimeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/ClassServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/ClassServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/ITimeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/TimeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/TimeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/resources/mapper/ClassMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/resources/mapper/ClassMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +89,7 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/IdeaProjects/selclass/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl&quot;,
@@ -239,7 +226,10 @@
       <workItem from="1677634339419" duration="166000" />
       <workItem from="1677634552986" duration="220000" />
       <workItem from="1677634854503" duration="867000" />
-      <workItem from="1677657500615" duration="618000" />
+      <workItem from="1677657500615" duration="821000" />
+      <workItem from="1677658339012" duration="22334000" />
+      <workItem from="1677724490223" duration="5644000" />
+      <workItem from="1677743111208" duration="5752000" />
     </task>
     <task id="LOCAL-00001" summary="登录">
       <created>1675485363964</created>
@@ -311,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675489304000</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="home等页面添加">
+      <created>1677658177880</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1677658177880</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

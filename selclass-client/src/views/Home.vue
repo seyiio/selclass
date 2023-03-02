@@ -14,6 +14,10 @@
                 <el-icon><icon-menu /></el-icon>
                 <span>抢课</span>
               </el-menu-item>
+              <el-menu-item index="/selclasstime" v-show="admin">
+                <el-icon><icon-menu /></el-icon>
+                <span>抢课时间</span>
+              </el-menu-item>
               <el-menu-item index="/timetable" v-show="!admin">
                 <el-icon><icon-menu /></el-icon>
                 <span>课表</span>

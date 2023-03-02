@@ -27,5 +27,5 @@ public class Cs implements Serializable {
 
     private Integer classid;
 
-    private Integer fraction;
+    private Double fraction;
 }
