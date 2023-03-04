@@ -1,10 +1,20 @@
 package com.fkczxt.selclassserver.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.fkczxt.selclassserver.mapper.ClassMapper;
+import com.fkczxt.selclassserver.pojo.Class;
 import com.fkczxt.selclassserver.pojo.Cs;
 import com.fkczxt.selclassserver.mapper.CsMapper;
+import com.fkczxt.selclassserver.pojo.RespBean;
 import com.fkczxt.selclassserver.service.ICsService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * <p>
@@ -16,5 +26,28 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class CsServiceImpl extends ServiceImpl<CsMapper, Cs> implements ICsService {
+    @Autowired
+    private CsMapper csMapper;
+    @Autowired
+    private ClassMapper classMapper;
+    public RespBean selclass(Cs cs){
+        if(csMapper.selectOne(new QueryWrapper<Cs>().eq("classid",cs.getClassid()))!=null) return RespBean.error("你已经选过这门课程了");
+        List<String> time= Arrays.asList(classMapper.selectById(cs.getClassid()).getTime().split(" "));
+        List<Cs> csList= csMapper.selectList(null);
+        AtomicBoolean flag = new AtomicBoolean(false);
+        csList.forEach(acs->{
+               Class class1= classMapper.selectOne(new QueryWrapper<Class>().eq("classid",acs.getClassid()));
+               List<String > time2= Arrays.asList(classMapper.selectById(class1).getTime().split(" "));
+               if(!Collections.disjoint(time,time2)){
+                   flag.set(true);
+            }
+        });
+        if (flag.get()){
+            return RespBean.error("该课程与已选课程时间冲突");
+        }
+        csMapper.insert(cs);
+        classMapper.selectById(cs.getClassid()).setSelected(classMapper.selectById(cs.getClassid()).getSelected()+1);
+        return RespBean.success("选课成功");
 
+    }
 }

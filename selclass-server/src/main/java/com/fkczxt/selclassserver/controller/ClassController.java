@@ -24,8 +24,9 @@ public class ClassController {
     @Autowired
     private IClassService iClassService;
     @GetMapping("/getclass")
-@ApiOperation(value = "获取选课列表")
+    @ApiOperation(value = "获取选课列表")
     public List<Class> getSelClass(){
     return iClassService.getSelClass();
 }
+
 }

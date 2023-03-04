@@ -4,30 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d07ce050-7f71-41df-ba6b-5c33dc38cd25" name="变更" comment="home等页面添加">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_24.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selclass-client/src/views/selclasstime.vue" afterDir="false" />
+    <list default="true" id="d07ce050-7f71-41df-ba6b-5c33dc38cd25" name="变更" comment="修改选课时间，获取选课列表">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/inFo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/inFo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selclass-client/src/views/selclass.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/selclass.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/selclass-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/selclass-server.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/ClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/ClassController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/TimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/TimeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/mapper/ClassMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/mapper/ClassMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/mapper/TimeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/mapper/TimeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/CsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/CsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/mapper/CsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/mapper/CsMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/Class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/Cs.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/Cs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/Time.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/Time.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/IClassService.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/IClassService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/ITimeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/ITimeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/ClassServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/ClassServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/ITimeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/TimeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/TimeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/resources/mapper/ClassMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/resources/mapper/ClassMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/ICsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/ICsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/CsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/CsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +48,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="2957aa1a-0a52-4b54-8530-0447575a22be" />
+        <option name="accountId" value="c67d08e3-84a6-4d70-91c5-76f4e21edc13" />
         <option name="url" value="https://github.com/seyiio/selclass.git" />
       </UrlAndAccount>
     </option>
@@ -81,39 +69,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProjects/selclass/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;D:/Program Files/nodejs/node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;5d03f0a9c446fe99de66bf3502c279af&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "E:/IdeaProjects/selclass/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "D:/Program Files/nodejs/node",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reactor",
+    "spring.configuration.checksum": "5d03f0a9c446fe99de66bf3502c279af",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\IdeaProjects\selclass\selclass-server\src\main\java\com\fkczxt\selclassserver\service\impl" />
@@ -137,7 +128,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="npm.run">
+  <component name="RunManager" selected="Spring Boot.SelclassApplication (1)">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:8080">
       <method v="2" />
     </configuration>
@@ -229,7 +220,10 @@
       <workItem from="1677657500615" duration="821000" />
       <workItem from="1677658339012" duration="22334000" />
       <workItem from="1677724490223" duration="5644000" />
-      <workItem from="1677743111208" duration="5752000" />
+      <workItem from="1677743111208" duration="6091000" />
+      <workItem from="1677761612387" duration="4148000" />
+      <workItem from="1677890228174" duration="1525000" />
+      <workItem from="1677891764863" duration="12533000" />
     </task>
     <task id="LOCAL-00001" summary="登录">
       <created>1675485363964</created>
@@ -308,7 +302,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677658177880</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="修改选课时间，获取选课列表">
+      <created>1677750612284</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677750612284</updated>
+    </task>
+    <task id="LOCAL-00013" summary="修改选课时间，获取选课列表">
+      <created>1677750671030</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677750671030</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +356,8 @@
     <MESSAGE value="服务端" />
     <MESSAGE value="1" />
     <MESSAGE value="home等页面添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="home等页面添加" />
+    <MESSAGE value="修改选课时间，获取选课列表" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改选课时间，获取选课列表" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
