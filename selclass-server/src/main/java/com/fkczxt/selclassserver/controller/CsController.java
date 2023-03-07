@@ -39,8 +39,6 @@ public class CsController implements InitializingBean {
     private IClassService iClassService;
     @Autowired
     private RedisTemplate redisTemplate;
-    @Autowired(required=false)
-    private RedisScript<Long> redisScript;
     @PostMapping ("/selectclass")
     @ApiOperation(value = "选课")
     public RespBean selectClass(@RequestBody Cs cs){

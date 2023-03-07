@@ -46,9 +46,11 @@
 
 <script  >
 import {getRequest} from "@/utils/api";
+import store from '@/store/index'
 export default {
   created() {
 getRequest('/admin/info').then(dataa=>{
+store.state.id=dataa.id;
   if (dataa.type==="0"){
       this.admin=true;
     }else if(dataa.type==="1"){

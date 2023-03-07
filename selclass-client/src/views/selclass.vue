@@ -30,6 +30,7 @@
 <script>
 import {getRequest} from "@/utils/api";
 import {postRequest} from "@/utils/api";
+import store from '@/store/index'
 export default {
 created() {
   getRequest('/time/selclasstime').then(data=>{
@@ -56,19 +57,19 @@ created() {
     }else this.time=false;
 
   },
-  getRequest('/admin/info').then(data=>{this.id=data.id;}))
+  )
 },
   name: "seClass",
   data() {
     return {
       tableData: [],
       time:false,
-      id:0,
+
     }
 },
 methods:{
   selectClass(s){
-    let a={classid:this.tableData[s].classid,studentid:this.id};
+    let a={classid:this.tableData[s].classid,studentid:store.state.id};
     postRequest("/cs/selectclass",a);
   }
 }
