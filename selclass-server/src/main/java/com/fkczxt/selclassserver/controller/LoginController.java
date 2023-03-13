@@ -27,13 +27,13 @@ public class LoginController {
     private IUserService userService;
     @ApiOperation(value = "登录后返回token")
 
-    @PostMapping("/login")
+    @PostMapping("/api/login")
     public RespBean login(@RequestBody UserLoginParam userLoginParam, HttpServletRequest request){
         return  userService.login(userLoginParam.getUsername(),userLoginParam.getPassword(),request);
     }
     @ApiOperation(value = "获取当前登录信息")
 
-    @GetMapping("/admin/info")
+    @GetMapping("/api/admin/info")
     public User getUserInfo(Principal principal){
         if(null==principal)
             return  null;
@@ -44,7 +44,7 @@ public class LoginController {
     }
 
     @ApiOperation(value = "退出登录")
-    @PostMapping("/logout")
+    @PostMapping("/api/logout")
     public RespBean logout(){
         return RespBean.success("注销成功");
     }

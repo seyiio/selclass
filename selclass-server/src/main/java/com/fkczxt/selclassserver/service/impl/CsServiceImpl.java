@@ -50,4 +50,14 @@ public class CsServiceImpl extends ServiceImpl<CsMapper, Cs> implements ICsServi
         return RespBean.success("选课成功");
 
     }
+
+    @Override
+    public RespBean delclass(Cs cs) {
+if (csMapper.selectOne(new QueryWrapper<Cs>().eq("classid",cs.getClassid()))==null) {
+    return RespBean.error("发生了意外");
 }
+csMapper.delete(new QueryWrapper<Cs>().eq("classid",cs.getClassid()));
+return RespBean.success("退课成功");
+}
+    }
+

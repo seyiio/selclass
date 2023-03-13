@@ -4,7 +4,7 @@
     <el-table-column prop="point" label="学分" width="180" />
     <el-table-column prop="time" label="时间" width="168"/>
     <el-table-column prop="teachername" label="任课老师" />
-    <el-table-column prop="selected" label="剩余数量" />
+    <el-table-column prop="value" label="剩余数量" />
     <el-table-column fixed="right" label="操作" width="120">
       <template #default="scope">
         <el-button
@@ -15,6 +15,15 @@
         >
           选课
         </el-button>
+        <el-button
+            link
+            type="primary"
+            size="small"
+            @click.prevent="deleteClass(scope.$index)"
+        >
+          退课
+        </el-button>
+
       </template>
     </el-table-column>
   </el-table>
@@ -33,6 +42,7 @@ import {postRequest} from "@/utils/api";
 import store from '@/store/index'
 export default {
 created() {
+
   getRequest('/time/selclasstime').then(data=>{
     if(new Date(data.starttime).getTime()<=new Date().getTime()&&new Date(data.endtime).getTime()>=new Date().getTime()){
       this.time=true;
@@ -46,7 +56,9 @@ created() {
               classid:classid,
               point:point,
               teachername:teachername,
-              selected:number-selected,
+              selected:selected,
+              number:number,
+              value:selected+'/'+number,
               time:time
             }
             selclasss.push(aclass)
@@ -70,9 +82,25 @@ created() {
 methods:{
   selectClass(s){
     let a={classid:this.tableData[s].classid,studentid:store.state.id};
-    postRequest("/cs/selectclass",a);
+   postRequest("/cs/selectclass",a).then(data=>{
+     if (data.code===200){
+        this.tableData[s].selected++;
+        this.tableData[s].value=this.tableData[s].selected+'/'+this.tableData[s].number
+     }
+    })
+  },
+  deleteClass(s){
+    let a={classid:this.tableData[s].classid,studentid:store.state.id};
+    postRequest("/cs/deleteclass",a).then(data=>{
+      if (data.code===200){
+        this.tableData[s].selected--;
+        this.tableData[s].value=this.tableData[s].selected+'/'+this.tableData[s].number
+      }
+    });
   }
+
 }
+
 }
 </script>
 

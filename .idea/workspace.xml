@@ -4,11 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d07ce050-7f71-41df-ba6b-5c33dc38cd25" name="变更" comment="学生选课">
+    <list default="true" id="d07ce050-7f71-41df-ba6b-5c33dc38cd25" name="变更" comment="学生选课前端">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_6_1_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_85_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_4_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_11_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_3_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_3_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selclass-server/src/main/resources/stock.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/selclass.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selclass-client/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/utils/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/Timetable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/Timetable.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selclass-client/src/views/selclass.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/selclass.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/security/RestAuthorizationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/security/RestAuthorizationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/security/RestfulAccessDeniedHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/security/RestfulAccessDeniedHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/config/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/ClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/ClassController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/CsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/CsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/TimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/TimeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/IClassService.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/IClassService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/ICsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/ICsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/ClassServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/ClassServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/CsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/CsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +53,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,7 +117,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_interpreter_path&quot;: &quot;D:/Program Files/nodejs/node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDK&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reactor&quot;,
@@ -107,6 +142,7 @@
       <recent name="E:\IdeaProjects\selclass\selclass-server\src\main\java\com\fkczxt\selclassserver\mapper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\15359\IdeaProjects\selclass" />
       <recent name="C:\Users\15359\IdeaProjects\selclass\selclass-server\src\main\resources\mapper" />
       <recent name="C:\Users\15359\IdeaProjects\selclass\selclass-server\src\main\java\com\fkczxt\selclassserver\mapper\xml" />
     </key>
@@ -121,7 +157,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="npm.run">
+  <component name="RunManager" selected="Spring Boot.SelclassApplication (1)">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:8080">
       <method v="2" />
     </configuration>
@@ -219,6 +255,11 @@
       <workItem from="1677891764863" duration="12533000" />
       <workItem from="1677938495117" duration="532000" />
       <workItem from="1677985309715" duration="90000" />
+      <workItem from="1678157415504" duration="213000" />
+      <workItem from="1678270273223" duration="1900000" />
+      <workItem from="1678591446226" duration="21974000" />
+      <workItem from="1678662988029" duration="3831000" />
+      <workItem from="1678670636821" duration="563000" />
     </task>
     <task id="LOCAL-00001" summary="登录">
       <created>1675485363964</created>
@@ -318,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677938536654</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="学生选课前端">
+      <created>1678157589051</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1678157589051</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +408,8 @@
     <MESSAGE value="home等页面添加" />
     <MESSAGE value="修改选课时间，获取选课列表" />
     <MESSAGE value="学生选课" />
-    <option name="LAST_COMMIT_MESSAGE" value="学生选课" />
+    <MESSAGE value="学生选课前端" />
+    <option name="LAST_COMMIT_MESSAGE" value="学生选课前端" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

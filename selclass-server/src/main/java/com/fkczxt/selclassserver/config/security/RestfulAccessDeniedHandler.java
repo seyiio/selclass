@@ -25,5 +25,6 @@ public class RestfulAccessDeniedHandler implements AccessDeniedHandler {
         out.write(new ObjectMapper().writeValueAsString(bean));
         out.flush();
         out.close();
+
     }
 }

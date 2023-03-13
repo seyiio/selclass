@@ -1,13 +1,19 @@
 package com.fkczxt.selclassserver.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.fkczxt.selclassserver.mapper.CsMapper;
+import com.fkczxt.selclassserver.mapper.UserMapper;
 import com.fkczxt.selclassserver.pojo.Class;
 import com.fkczxt.selclassserver.mapper.ClassMapper;
+import com.fkczxt.selclassserver.pojo.Cs;
+import com.fkczxt.selclassserver.pojo.RespBean;
+
 import com.fkczxt.selclassserver.service.IClassService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -22,9 +28,25 @@ import java.util.List;
 public class ClassServiceImpl extends ServiceImpl<ClassMapper, Class> implements IClassService {
     @Autowired
     private ClassMapper classMapper;
+    @Autowired
+    private UserMapper userMapper;
+    @Autowired
+    private CsMapper csMapper;
+
 
     @Override
-    public List<Class> getSelClass() {
+    public List<Class> getClasses() {
         return classMapper.selectList(null);
     }
+    @Override
+    public List<Class> getSelClass(Long id) {
+        if (userMapper.selectById(id).getType().equals("0")){return null;}
+       List<Cs> csList= csMapper.selectList(new QueryWrapper<Cs>().eq("studentid",id));
+        List<Class> classes = new ArrayList<>();
+        csList.forEach(cs->{
+           classes.add( classMapper.selectById(cs.getClassid()));
+        });
+        return classes;
+    }
+
 }

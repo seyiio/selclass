@@ -1,5 +1,5 @@
 let proxyObj = {}
-proxyObj['/'] = {
+proxyObj['/api/'] = {
 //websocket
   ws: false,
 //目标地址

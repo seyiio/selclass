@@ -25,7 +25,7 @@ import java.util.Date;
  * @since 2023-03-01
  */
 @RestController
-@RequestMapping("/time")
+@RequestMapping("/api/time")
 public class TimeController {
     @Autowired
     private ITimeService iTimeService;

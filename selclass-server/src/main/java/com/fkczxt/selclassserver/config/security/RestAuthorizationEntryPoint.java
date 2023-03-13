@@ -2,6 +2,8 @@ package com.fkczxt.selclassserver.config.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fkczxt.selclassserver.pojo.RespBean;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -24,6 +26,7 @@ public class RestAuthorizationEntryPoint implements AuthenticationEntryPoint {
         out.write(new ObjectMapper().writeValueAsString(bean));
         out.flush();
         out.close();
+
     }
 
 }

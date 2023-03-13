@@ -17,9 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 
 /**
@@ -31,7 +29,7 @@ import java.util.List;
  * @since 2023-01-18
  */
 @RestController
-@RequestMapping("/cs")
+@RequestMapping("/api/cs")
 public class CsController implements InitializingBean {
     @Autowired
     private ICsService iCsService;
@@ -39,18 +37,32 @@ public class CsController implements InitializingBean {
     private IClassService iClassService;
     @Autowired
     private RedisTemplate redisTemplate;
+    @Autowired
+    private RedisScript<Long> redisScript;
+    private Map<Integer, Boolean> EmptyStockMap = new HashMap<>();
     @PostMapping ("/selectclass")
     @ApiOperation(value = "选课")
     public RespBean selectClass(@RequestBody Cs cs){
         ValueOperations valueOperations=redisTemplate.opsForValue();
-
-
+        Long stock=(Long) redisTemplate.execute(redisScript,Collections.singletonList("classid"+cs.getClassid()), Collections.EMPTY_LIST);
+        if (stock < 0) {
+            EmptyStockMap.put(cs.getClassid(), true);
+            valueOperations.increment("classid:" + cs.getClassid());
+            return RespBean.error("EMPTY_STOCK");
+        }
         return iCsService.selclass(cs);
     }
+    @PostMapping ("/deleteclass")
+    @ApiOperation(value = "选课")
+    public RespBean deleteClass(@RequestBody Cs cs){
+
+        return iCsService.delclass(cs);
+    }
+
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        List<Class> list =iClassService.getSelClass();
+        List<Class> list =iClassService.getClasses();
         if(CollectionUtils.isEmpty(list)){
             return;
         }

@@ -59,7 +59,8 @@ public class SecurityConfig{
         httpSecurity.addFilterBefore(jwtAuthenticationTokenFilter(), UsernamePasswordAuthenticationFilter.class);
         httpSecurity.exceptionHandling()
                 .accessDeniedHandler(restfulAccessDeniedHandler)
-                .authenticationEntryPoint(restAuthorizationEntryPoint);
+                .authenticationEntryPoint(restAuthorizationEntryPoint)
+                 ;
         return httpSecurity.build();
     }
 
@@ -75,7 +76,7 @@ public class SecurityConfig{
     }
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer(){
-        return(web)->web.ignoring().antMatchers("/login","/doc.html",
+        return(web)->web.ignoring().antMatchers("/doc.html","/api/login",
                 "/css/*","/js/**","/index.html","favicon.ico","/webjars/**","/swagger-resources/**","/v2/api-docs/**");
     }
     @Bean

@@ -1,13 +1,156 @@
 <template>
-课表
+  <div class="kbBox">
+    <el-table
+        :data="classList"
+        border
+        style="width: 100%"
+        class="courseForm"
+        :header-cell-style="{ background: '#5D87EB', color: '#fff' }"
+    >
+      <el-table-column
+          prop="Course"
+          label="课时/节次"
+      ></el-table-column>
+      <el-table-column prop="one" label="周一"></el-table-column>
+      <el-table-column prop="two" label="周二" ></el-table-column>
+      <el-table-column prop="three" label="周三"></el-table-column>
+      <el-table-column prop="four" label="周四" ></el-table-column>
+      <el-table-column prop="five" label="周五"></el-table-column>
+    </el-table>
+    <div></div>
+  </div>
 </template>
 
 <script>
+import {getRequest} from "@/utils/api";
+
 export default {
-  name: "timeTable"
+  name: "timeTable",
+  created() {
+    getRequest('/class/getselclass').then(data=>{
+      if (data){
+        let selclasss = []
+        data.forEach(selclass=>{
+          let{classname,classid,point,teachername,selected,number,time}=selclass;
+          let aclass={
+            classname:classname,
+            classid:classid,
+            point:point,
+            teachername:teachername,
+            selected:selected,
+            number:number,
+            value:selected+'/'+number,
+            time:time
+          }
+          selclasss.push(aclass)
+        });
+        this.tableData=selclasss;
+      }
+    })
+  },
+  data(){
+    return{
+      classList:[ {
+      Course: "第一节",
+      one: "",
+      two: "",
+      three: "",
+      four: "",
+      five: "",
+    },
+      {
+        Course: "第二节",
+        one: "",
+        two: "",
+        three: "",
+        four: "",
+        five: "",
+      },
+        {
+          Course: "第三节",
+          one: "",
+          two: "",
+          three: "",
+          four: "",
+          five: "",
+        },
+        {
+          Course: "第四节",
+          one: "",
+          two: "",
+          three: "",
+          four: "",
+          five: "",
+        },
+        {
+          Course: "第五节",
+          one: "",
+          two: "",
+          three: "",
+          four: "",
+          five: "",
+        },
+        {
+          Course: "第六节",
+          one: "",
+          two: "",
+          three: "",
+          four: "",
+          five: "",
+        },
+        {
+          Course: "第七节",
+          one: "",
+          two: "",
+          three: "",
+          four: "",
+          five: "",
+        },
+        {
+          Course: "第八节",
+          one: "",
+          two: "",
+          three: "",
+          four: "",
+          five: "",
+        },
+        {
+          Course: "第九节",
+          one: "",
+          two: "",
+          three: "",
+          four: "",
+          five: "",
+        },
+        {
+          Course: "第十节",
+          one: "",
+          two: "",
+          three: "",
+          four: "",
+          five: "",
+        },
+      ]}
+  }
 }
 </script>
 
 <style scoped>
 
+.el-row {
+  margin-bottom: 20px;
+}
+.el-row:last-child {
+  margin-bottom: 0;
+}
+.el-col {
+  border-radius: 4px;
+}
+
+.grid-content {
+  border-radius: 4px;
+  border: 1px solid black;
+  text-align: center;
+  min-height: 36px;
+}
 </style>
