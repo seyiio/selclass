@@ -29,22 +29,34 @@ export default {
   created() {
     getRequest('/class/getselclass').then(data=>{
       if (data){
-        let selclasss = []
+
+
         data.forEach(selclass=>{
-          let{classname,classid,point,teachername,selected,number,time}=selclass;
+          let{classname,classid,point,teachername,time}=selclass;
           let aclass={
             classname:classname,
             classid:classid,
             point:point,
             teachername:teachername,
-            selected:selected,
-            number:number,
-            value:selected+'/'+number,
             time:time
           }
-          selclasss.push(aclass)
+         const selclasss= aclass.time.toString().split(' ');
+          selclasss.forEach(item=>{
+
+            if(item.toString().charAt(7)==='1'){this.classList[item.toString().charAt(9)].one=classname; }
+            else if(item.toString().charAt(7) === '2') {
+              this.classList[item.toString().charAt(9)].two=classname;
+            } else if(item.toString().charAt(7) === '3') {
+              this.classList[item.toString().charAt(9)].three=classname;
+            } else if(item.toString().charAt(7) === '4') {
+              this.classList[item.toString().charAt(9)].four=classname;
+            } else if(item.toString().charAt(7) === '5') {
+              this.classList[item.toString().charAt(9)].five=classname;
+            }
+
+          })
         });
-        this.tableData=selclasss;
+
       }
     })
   },
@@ -90,46 +102,7 @@ export default {
           four: "",
           five: "",
         },
-        {
-          Course: "第六节",
-          one: "",
-          two: "",
-          three: "",
-          four: "",
-          five: "",
-        },
-        {
-          Course: "第七节",
-          one: "",
-          two: "",
-          three: "",
-          four: "",
-          five: "",
-        },
-        {
-          Course: "第八节",
-          one: "",
-          two: "",
-          three: "",
-          four: "",
-          five: "",
-        },
-        {
-          Course: "第九节",
-          one: "",
-          two: "",
-          three: "",
-          four: "",
-          five: "",
-        },
-        {
-          Course: "第十节",
-          one: "",
-          two: "",
-          three: "",
-          four: "",
-          five: "",
-        },
+
       ]}
   }
 }

@@ -46,7 +46,9 @@ public class CsServiceImpl extends ServiceImpl<CsMapper, Cs> implements ICsServi
             return RespBean.error("该课程与已选课程时间冲突");
         }
         csMapper.insert(cs);
-        classMapper.selectById(cs.getClassid()).setSelected(classMapper.selectById(cs.getClassid()).getSelected()+1);
+        Class c=classMapper.selectOne(new QueryWrapper<Class>().eq("classid",cs.getClassid()));
+        c.setSelected(c.getSelected()+1);
+        classMapper.updateById(c);
         return RespBean.success("选课成功");
 
     }
@@ -56,6 +58,9 @@ public class CsServiceImpl extends ServiceImpl<CsMapper, Cs> implements ICsServi
 if (csMapper.selectOne(new QueryWrapper<Cs>().eq("classid",cs.getClassid()))==null) {
     return RespBean.error("发生了意外");
 }
+        Class c=classMapper.selectOne(new QueryWrapper<Class>().eq("classid",cs.getClassid()));
+        c.setSelected(c.getSelected()-1);
+        classMapper.updateById(c);
 csMapper.delete(new QueryWrapper<Cs>().eq("classid",cs.getClassid()));
 return RespBean.success("退课成功");
 }
