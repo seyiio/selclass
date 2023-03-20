@@ -1,6 +1,7 @@
 package com.fkczxt.selclassserver.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.fkczxt.selclassserver.mapper.CsMapper;
 import com.fkczxt.selclassserver.mapper.UserMapper;
 import com.fkczxt.selclassserver.pojo.Class;
@@ -49,4 +50,8 @@ public class ClassServiceImpl extends ServiceImpl<ClassMapper, Class> implements
         return classes;
     }
 
+
 }
+
+
+

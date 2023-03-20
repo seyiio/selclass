@@ -16,6 +16,8 @@
       <el-table-column prop="three" label="周三"></el-table-column>
       <el-table-column prop="four" label="周四" ></el-table-column>
       <el-table-column prop="five" label="周五"></el-table-column>
+      <el-table-column prop="six" label="周六" ></el-table-column>
+      <el-table-column prop="seven" label="周天"></el-table-column>
     </el-table>
     <div></div>
   </div>
@@ -41,17 +43,23 @@ export default {
             time:time
           }
          const selclasss= aclass.time.toString().split(' ');
+
           selclasss.forEach(item=>{
 
-            if(item.toString().charAt(7)==='1'){this.classList[item.toString().charAt(9)].one=classname; }
+            if(item.toString().charAt(7)==='1')
+            {this.classList[item.toString().charAt(9)-1].one=classname; }
             else if(item.toString().charAt(7) === '2') {
-              this.classList[item.toString().charAt(9)].two=classname;
+              this.classList[item.toString().charAt(9)-1].two=classname;
             } else if(item.toString().charAt(7) === '3') {
-              this.classList[item.toString().charAt(9)].three=classname;
+              this.classList[item.toString().charAt(9)-1].three=classname;
             } else if(item.toString().charAt(7) === '4') {
-              this.classList[item.toString().charAt(9)].four=classname;
+              this.classList[item.toString().charAt(9)-1].four=classname;
             } else if(item.toString().charAt(7) === '5') {
-              this.classList[item.toString().charAt(9)].five=classname;
+              this.classList[item.toString().charAt(9)-1].five=classname;
+            }else if(item.toString().charAt(7) === '6') {
+              this.classList[item.toString().charAt(9)-1].six=classname;
+            }else if(item.toString().charAt(7) === '7') {
+              this.classList[item.toString().charAt(9)-1].seven=classname;
             }
 
           })
@@ -68,7 +76,8 @@ export default {
       two: "",
       three: "",
       four: "",
-      five: "",
+      five: "",  six: "",
+        seven: ""
     },
       {
         Course: "第二节",
@@ -77,6 +86,8 @@ export default {
         three: "",
         four: "",
         five: "",
+        six: "",
+        seven: ""
       },
         {
           Course: "第三节",
@@ -85,6 +96,8 @@ export default {
           three: "",
           four: "",
           five: "",
+          six: "",
+          seven: ""
         },
         {
           Course: "第四节",
@@ -93,6 +106,8 @@ export default {
           three: "",
           four: "",
           five: "",
+          six: "",
+          seven: ""
         },
         {
           Course: "第五节",
@@ -101,6 +116,8 @@ export default {
           three: "",
           four: "",
           five: "",
+          six: "",
+          seven: ""
         },
 
       ]}

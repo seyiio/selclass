@@ -15,4 +15,5 @@ import com.fkczxt.selclassserver.pojo.RespBean;
 public interface ICsService extends IService<Cs> {
     RespBean selclass(Cs cs);
     RespBean delclass(Cs cs);
+    RespBean beforesel(Cs cs);
 }
