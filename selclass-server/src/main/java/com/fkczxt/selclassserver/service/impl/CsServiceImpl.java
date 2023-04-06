@@ -51,7 +51,7 @@ public class CsServiceImpl extends ServiceImpl<CsMapper, Cs> implements ICsServi
             return RespBean.error("发生了意外");
         }
         Class c = classMapper.selectOne(new QueryWrapper<Class>().eq("classid", cs.getClassid()));
-
+        c.setSelected(c.getSelected()-1);
         classMapper.updateById(c);
         csMapper.delete(new QueryWrapper<Cs>().eq("classid", cs.getClassid()));
         backnum(c);
