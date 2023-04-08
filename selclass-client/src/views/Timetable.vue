@@ -25,14 +25,14 @@
 
 <script>
 import {getRequest} from "@/utils/api";
-
 export default {
   name: "timeTable",
+
   created() {
+
+
     getRequest('/class/getselclass').then(data=>{
       if (data){
-
-
         data.forEach(selclass=>{
           let{classname,classid,point,teachername,time}=selclass;
           let aclass={

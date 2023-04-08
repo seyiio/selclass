@@ -12,7 +12,7 @@ axios.interceptors.request.use(config => {
     console.log(error)
 })
 axios.interceptors.response.use(success=>{
-    console.log("aaaa")
+
     if(success.status&&success.status===200){
         if (success.data.code===500||success.data.code===403){
 
@@ -60,7 +60,7 @@ export const postRequest=(url,params)=>{
 export const getRequest = (url, params) => {
     return axios({
         method: 'get',
-        url:base+ url,
+        url:base+url,
         data: params
     })
 }

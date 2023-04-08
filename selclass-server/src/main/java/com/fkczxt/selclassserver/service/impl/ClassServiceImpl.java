@@ -41,14 +41,17 @@ public class ClassServiceImpl extends ServiceImpl<ClassMapper, Class> implements
     }
     @Override
     public List<Class> getSelClass(Long id) {
-        if (userMapper.selectById(id).getType().equals("0")){return null;}
+        String  a= userMapper.selectById(id).getType();
+        if (a.equals("0")){return null;}else if(a.equals("3")){
        List<Cs> csList= csMapper.selectList(new QueryWrapper<Cs>().eq("studentid",id));
         List<Class> classes = new ArrayList<>();
         csList.forEach(cs->{
            classes.add( classMapper.selectById(cs.getClassid()));
         });
-        return classes;
-
+        return classes;}
+        else{
+            return classMapper.selectList( new QueryWrapper<Class>().eq("teacher",id));
+        }
     }
 
 

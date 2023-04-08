@@ -18,12 +18,10 @@ import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.data.redis.core.script.RedisScript;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.CollectionUtils;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.*;
 
 
@@ -45,8 +43,6 @@ public class CsController implements InitializingBean {
     private IClassService iClassService;
     @Autowired
     private MQSender mqSender;
-    @Autowired
-    private MQReceiver mqReceiver;
     @Autowired
     private RedisTemplate redisTemplate;
     @Autowired
@@ -73,10 +69,16 @@ public class CsController implements InitializingBean {
         return RespBean.success("选课成功");
     }
     @PostMapping ("/deleteclass")
-    @ApiOperation(value = "选课")
+    @ApiOperation(value = "退课")
     public RespBean deleteClass(@RequestBody Cs cs){
 
         return iCsService.delclass(cs);
+    }
+    @GetMapping("/getfraction")
+    @ApiOperation(value = "获取分数")
+    public String  getfraction(Integer id, Long sid ){
+
+        return iCsService.getfraction(id,sid);
     }
 
 

@@ -10,10 +10,6 @@
         <module name="selclass-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="selclass" target="17" />
-      <module name="selclass-server" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

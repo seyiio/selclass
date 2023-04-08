@@ -44,5 +44,13 @@ public class ClassController {
         String username=principal.getName();
         return iClassService.getSelClass(userService.getUserByusername(username).getId());
     }
+    @GetMapping("/getselclassbyt")
+    @ApiOperation(value = "获取课表")
+    public List<Class> getSelClassbyt(Principal principal){
+        if(null==principal)
+            return  null;
+        String username=principal.getName();
+        return iClassService.getSelClass(userService.getUserByusername(username).getId());
+    }
 
 }

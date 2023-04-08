@@ -18,4 +18,5 @@ import java.util.List;
 public interface IClassService extends IService<Class> {
    List<Class> getSelClass(Long id);
    List<Class> getClasses();
+
 }

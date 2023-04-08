@@ -26,7 +26,7 @@
                 <el-icon><document /></el-icon>
                 <span>个人信息</span>
               </el-menu-item>
-              <el-menu-item index="/classpoint">
+              <el-menu-item index="/classpoint" v-show="student">
                 <el-icon><setting /></el-icon>
                 <span>成绩查询</span>
               </el-menu-item>
