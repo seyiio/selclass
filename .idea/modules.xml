@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/selclass-client.iml" filepath="$PROJECT_DIR$/selclass-client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/selclass-server/selclass-server.iml" filepath="$PROJECT_DIR$/selclass-server/selclass-server.iml" />
     </modules>
   </component>
 </project>
