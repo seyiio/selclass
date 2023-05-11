@@ -4,11 +4,11 @@
       stripe
       style="width: 100%">
     <el-table-column
-        prop="id"
+        prop="username"
         label="学号">
     </el-table-column>
     <el-table-column
-        prop="username"
+        prop="name"
         label="学生姓名"
         width="180">
     </el-table-column>
@@ -21,9 +21,13 @@
         prop="major"
         label="专业">
     </el-table-column>
+      <el-table-column
+              prop="fraction"
+              label="分数">
+      </el-table-column>
     <el-table-column fixed="right" label="操作" width="120">
       <template #default="scope">
-        <el-input v-model="input[scope.index]" placeholder="未打分" @blur="myblur($event,scope.index)" type="number" maxlength="3"></el-input>
+        <el-input min="0" max="100" v-model="scope.row.fraction" placeholder="未打分" @blur="myblur($event,scope.$index)" type="number" maxlength="3"></el-input>
       </template></el-table-column>
   </el-table>
 </div>
@@ -37,7 +41,6 @@ export default {
   data(){
     return{
       studentlist:[],
-      input:[]
     }
   },
 created() {
@@ -46,11 +49,11 @@ getRequest('/class/students/?id='+this.$route.query.id).then(data => {
   if (data) {
     let students = [];
     let promiseList = data.map(student => {
-      const {id,username,grade,major} = student;
+      const {id,username,grade,major,name} = student;
       return getRequest('/cs/getfraction/?id=' + this.$route.query.id + '&sid=' + id).then(data => {
         let aclass = {
           id: id, username: username, grade: grade,
-          major: major,
+          major: major,name:name,
           fraction: data,
         };
         students.push(aclass);
@@ -64,9 +67,11 @@ getRequest('/class/students/?id='+this.$route.query.id).then(data => {
 },
 methods:{
   myblur(e,index){
-postRequest('/class/modifystudentpoint/?sid='+this.studentlist[index].id+'&cid='+ this.$route.query.id +'&point='+e.target.value)
+      console.log(index)
+postRequest('/class/modifystudentpoint/?uid='+this.studentlist[index].id+'&cid='+ this.$route.query.id +'&point='+e.target.value)
   }
 }
+
 }
 
 </script>
