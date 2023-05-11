@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d07ce050-7f71-41df-ba6b-5c33dc38cd25" name="变更" comment="中期检查">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/474ceb53-7744-40e1-9912-68a50c4b7a47.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="d07ce050-7f71-41df-ba6b-5c33dc38cd25" name="变更" comment="成绩查询">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/474ceb53-7744-40e1-9912-68a50c4b7a47.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/474ceb53-7744-40e1-9912-68a50c4b7a47.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/selclass-server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/aClass.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/aClass.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +40,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="c67d08e3-84a6-4d70-91c5-76f4e21edc13" />
+        <option name="accountId" value="3106a108-c80a-48fe-907b-3ae050ad0bf7" />
         <option name="url" value="https://github.com/seyiio/selclass.git" />
       </UrlAndAccount>
     </option>
@@ -65,44 +61,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "D:/Users/fk/IdeaProjects/selclass",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\15359\\IdeaProjects\\selclass\\selclass-client\\node_modules\\prettier",
-    "project.structure.last.edited": "SDK",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
-    "spring.configuration.checksum": "5d03f0a9c446fe99de66bf3502c279af",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/nodejs/node.exe&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;C:/Program Files/nodejs/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\15359\\IdeaProjects\\selclass\\selclass-client\\node_modules\\prettier&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDK&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;5d03f0a9c446fe99de66bf3502c279af&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "RunConfigurationTargetLRU": [
-      "474ceb53-7744-40e1-9912-68a50c4b7a47",
-      "474ceb53-7744-40e1-9912-68a50c4b7a47/schema/\"selclass\""
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;474ceb53-7744-40e1-9912-68a50c4b7a47&quot;,
+      &quot;474ceb53-7744-40e1-9912-68a50c4b7a47/schema/\&quot;selclass\&quot;&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -130,7 +126,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SelclassApplication">
+  <component name="RunManager" selected="Spring Boot.SelclassApplication (1)">
     <configuration name="selclass.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/selclass.sql" />
       <script-mode>FILE</script-mode>
@@ -140,9 +136,7 @@
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:8080">
       <method v="2" />
     </configuration>
-    <configuration name="SelclassApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="19" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <configuration name="SelclassApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="selclass-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.fkczxt.selclassserver.SelclassApplication" />
       <extension name="coverage">
@@ -168,12 +162,12 @@
     <list>
       <item itemvalue="JavaScript 调试.Debug Application" />
       <item itemvalue="npm.run" />
-      <item itemvalue="Spring Boot.SelclassApplication" />
+      <item itemvalue="Spring Boot.SelclassApplication (1)" />
       <item itemvalue="数据库脚本.selclass.sql" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SelclassApplication" />
+        <item itemvalue="Spring Boot.SelclassApplication (1)" />
         <item itemvalue="数据库脚本.selclass.sql" />
       </list>
     </recent_temporary>
@@ -254,11 +248,8 @@
       <workItem from="1680173308431" duration="1750000" />
       <workItem from="1680221732165" duration="4061000" />
       <workItem from="1680573468820" duration="4553000" />
-      <workItem from="1681277689278" duration="63000" />
-      <workItem from="1681987876055" duration="161000" />
-      <workItem from="1681988061493" duration="103000" />
-      <workItem from="1681988171588" duration="28000" />
-      <workItem from="1681988241341" duration="369000" />
+      <workItem from="1683522752000" duration="36000" />
+      <workItem from="1683793151977" duration="5251000" />
     </task>
     <task id="LOCAL-00001" summary="登录">
       <created>1675485363964</created>
@@ -379,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678843772282</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="成绩查询">
+      <created>1680965594167</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1680965594167</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
