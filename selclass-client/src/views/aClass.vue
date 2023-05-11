@@ -26,6 +26,7 @@
                 >
                     打分
                 </el-button>
+
             </template></el-table-column>
     </el-table>
     </div>
@@ -62,7 +63,8 @@ export default {
     },
     methods:{
         selectClass(s){
-            console.log(s)
+            this.$router.push({path:'/point',query:{id:this.classlist[s].classid}
+            })
         }
 
     }

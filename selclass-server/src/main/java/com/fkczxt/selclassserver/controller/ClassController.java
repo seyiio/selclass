@@ -8,10 +8,7 @@ import com.fkczxt.selclassserver.service.IUserService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
 import java.util.List;
@@ -52,5 +49,14 @@ public class ClassController {
         String username=principal.getName();
         return iClassService.getSelClass(userService.getUserByusername(username).getId());
     }
-
+    @GetMapping("/students")
+    @ApiOperation(value = "获取选课学生名单")
+    public List<User> getstudents(int id){
+        return iClassService.getstudents(id);
+    }
+    @PostMapping("/modifystudentpoint")
+    @ApiOperation(value = "修改学生成绩")
+    public RespBean modifypoint(int uid,int cid,double point){
+        return iClassService.modify(uid,cid,point);
+    }
 }

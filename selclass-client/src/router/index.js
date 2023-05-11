@@ -6,6 +6,7 @@ import timeTable from "@/views/Timetable.vue";
 import info from "@/views/inFo.vue";
 import classPoint from "@/views/classPoint.vue";
 import aclass from "@/views/aClass.vue"
+import putpoint from "@/views/point.vue"
 import selclasstime from "@/views/selclasstime.vue";
 const routerHistory = createWebHistory()
 
@@ -51,6 +52,11 @@ routes:[
             {path:'/selclasstime',
                 name:'selclasstime',
                 component:selclasstime
+
+            },{
+        path:'/point',
+                name:'putpoint',
+                component:putpoint,
 
             }]
     }  ,

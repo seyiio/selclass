@@ -9,6 +9,7 @@ import com.fkczxt.selclassserver.mapper.ClassMapper;
 import com.fkczxt.selclassserver.pojo.Cs;
 import com.fkczxt.selclassserver.pojo.RespBean;
 
+import com.fkczxt.selclassserver.pojo.User;
 import com.fkczxt.selclassserver.service.IClassService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +40,25 @@ public class ClassServiceImpl extends ServiceImpl<ClassMapper, Class> implements
     public List<Class> getClasses() {
         return classMapper.selectList(null);
     }
+
+    @Override
+    public List<User> getstudents(int id) {
+        List<User> users=new ArrayList<>();
+        List<Cs> cs =csMapper.selectList(new QueryWrapper<Cs>().eq("classid",id));
+        cs.forEach(cs1 -> {
+
+            users.add(userMapper.selectById(cs1.getStudentid()));
+        });
+        return users;
+    }
+
+    @Override
+    public RespBean modify(int uid, int cid, double point) {
+        if (csMapper.update(null ,new UpdateWrapper<Cs>().eq("studentid",uid).eq("classid",cid).set("fraction",point))>0)
+            return RespBean.success("修改成功");
+        return RespBean.error("修改失败");
+    }
+
     @Override
     public List<Class> getSelClass(Long id) {
         String  a= userMapper.selectById(id).getType();
