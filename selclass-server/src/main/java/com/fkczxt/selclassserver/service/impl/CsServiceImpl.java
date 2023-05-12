@@ -69,7 +69,7 @@ public class CsServiceImpl extends ServiceImpl<CsMapper, Cs> implements ICsServi
 
     public void backnum(Class classVo) {
 
-        redisTemplate.opsForValue().decrement("classid" + classVo.getClassid());
+        redisTemplate.opsForValue().increment("classid" + classVo.getClassid());
     }
     @Override
     public RespBean beforesel(Cs cs) {
@@ -96,11 +96,10 @@ public class CsServiceImpl extends ServiceImpl<CsMapper, Cs> implements ICsServi
     }
    public String getfraction(Integer id,Long sid){
        Long  student=userMapper.selectById(sid).getId();
-
-        String a= csMapper.selectOne(new QueryWrapper<Cs>().eq("studentid",student).eq("classid",id)).getFraction().toString();
-        if (a==null)
-            return "null";
-        else return a;
+       Double d=csMapper.selectOne(new QueryWrapper<Cs>().eq("studentid",student).eq("classid",id)).getFraction();
+        if (d == null)
+            return "未打分";
+        else return d.toString();
     }
 }
 

@@ -4,7 +4,7 @@
       <el-header>大学生抢课系统</el-header>
       <el-container>
         <el-aside width="200px">
-            <h5 class="mb-2">Default colors</h5>
+            <h5 class="mb-2">菜单</h5>
             <el-menu
                 default-active="2"
                 class="el-menu-vertical-demo"
@@ -38,7 +38,7 @@
         </el-aside>
       <el-main> <router-view/> </el-main>
       </el-container>
-      <el-footer>Footer</el-footer>
+      <el-footer>QVQ</el-footer>
       </el-container>
 
   </div>
