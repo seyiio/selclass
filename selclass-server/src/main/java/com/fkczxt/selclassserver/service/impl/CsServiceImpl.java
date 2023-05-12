@@ -57,12 +57,12 @@ public class CsServiceImpl extends ServiceImpl<CsMapper, Cs> implements ICsServi
 
     @Override
     public RespBean delclass(Cs cs) {
-        if (csMapper.selectOne(new QueryWrapper<Cs>().eq("classid", cs.getClassid())) == null) {
+        if (csMapper.selectCount(new QueryWrapper<Cs>().eq("classid",cs.getClassid()).eq("studentid",cs.getStudentid()))==0) {
             return RespBean.error("发生了意外");
         }
 
         classMapper.update(null,new UpdateWrapper<Class>().eq("classid",cs.getClassid()).setSql("selected=selected-1"));
-        csMapper.delete(new QueryWrapper<Cs>().eq("classid", cs.getClassid()));
+        csMapper.delete(new QueryWrapper<Cs>().eq("classid", cs.getClassid()).eq("studentid",cs.getStudentid()));
         backnum(classMapper.selectById(cs.getClassid()));
         return RespBean.success("退课成功");
     }
