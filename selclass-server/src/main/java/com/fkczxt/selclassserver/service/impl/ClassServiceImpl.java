@@ -53,7 +53,7 @@ public class ClassServiceImpl extends ServiceImpl<ClassMapper, Class> implements
     }
 
     @Override
-    public RespBean modify(int uid, int cid, double point) {
+    public RespBean modify(int uid, int cid, Double point) {
         if (csMapper.update(null ,new UpdateWrapper<Cs>().eq("studentid",uid).eq("classid",cid).set("fraction",point))>0)
             return RespBean.success("修改成功");
         return RespBean.error("修改失败");

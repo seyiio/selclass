@@ -56,7 +56,7 @@ public class ClassController {
     }
     @PostMapping("/modifystudentpoint")
     @ApiOperation(value = "修改学生成绩")
-    public RespBean modifypoint(int uid,int cid,double point){
+    public RespBean modifypoint(int uid,int cid,Double point){
         return iClassService.modify(uid,cid,point);
     }
 }

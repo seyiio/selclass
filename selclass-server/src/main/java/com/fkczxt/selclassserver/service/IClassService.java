@@ -21,5 +21,5 @@ public interface IClassService extends IService<Class> {
    List<Class> getSelClass(Long id);
    List<Class> getClasses();
    List<User> getstudents(int id);
-   RespBean modify(int uid,int cid,double point);
+   RespBean modify(int uid,int cid,Double point);
 }

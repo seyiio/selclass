@@ -66,9 +66,11 @@ getRequest('/class/students/?id='+this.$route.query.id).then(data => {
 })
 },
 methods:{
-  myblur(e,index){
-      console.log(index)
-postRequest('/class/modifystudentpoint/?uid='+this.studentlist[index].id+'&cid='+ this.$route.query.id +'&point='+e.target.value)
+  myblur(e,index){if(e.target.value!==""){
+postRequest('/class/modifystudentpoint/?uid='+this.studentlist[index].id+'&cid='+ this.$route.query.id +'&point='+e.target.value)}else{
+    postRequest('/class/modifystudentpoint/?uid='+this.studentlist[index].id+'&cid='+ this.$route.query.id +'&point=0');
+    this.studentlist[index].fraction=0;
+  }
   }
 }
 
