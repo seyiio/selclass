@@ -2,6 +2,7 @@
   <el-table
       :data="studentlist"
       stripe
+      height="309"
       style="width: 100%">
     <el-table-column
         prop="username"

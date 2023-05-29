@@ -1,10 +1,10 @@
 <template>
   <div class="common-layout">
-    <el-container>
-      <el-header>大学生抢课系统</el-header>
-      <el-container>
+    <el-container id="container">
+      <el-header ><h4 class="title">大学生抢课系统</h4></el-header>
+      <el-container id="body" >
         <el-aside width="200px">
-            <h5 class="mb-2">菜单</h5>
+            <h5 class="mb-2 " style="text-align: center">菜单</h5>
             <el-menu
                 default-active="2"
                 class="el-menu-vertical-demo"
@@ -38,7 +38,7 @@
         </el-aside>
       <el-main> <router-view/> </el-main>
       </el-container>
-      <el-footer>QVQ</el-footer>
+      <el-footer><h4 class="footer">QVQ</h4></el-footer>
       </el-container>
 
   </div>
@@ -75,6 +75,42 @@ store.state.id=dataa.id;
 
 <style scoped>
 
+.el-header{
+
+  background-color: #ffeaea;
+
+}
+.title{
+  color: #333;
+
+  text-align: center;
+
+}
+.footer{
+  color: #333;
+
+  text-align: center;
+}
+.el-footer {
+
+  background-color: #efdbd3;
+
+}
+#body{
+  background-color: #ceff78;
+}
+#container{
+  background-clip: padding-box;
+  margin: 5% 10%;
+  border-radius: 30px ;
+  border:1px solid #eaeaea;
+overflow: hidden;
+  box-shadow: 0 0 25px #cac6c6;
+}
+.el-main{
+  background-color: #d2faff;
+  height: 349px;
+}
 </style>
 <script  setup>
 

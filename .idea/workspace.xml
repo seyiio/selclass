@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d07ce050-7f71-41df-ba6b-5c33dc38cd25" name="变更" comment="未打分后端">
+    <list default="true" id="d07ce050-7f71-41df-ba6b-5c33dc38cd25" name="变更" comment="结束">
+      <change afterPath="$PROJECT_DIR$/selclass-client/src/assets/bg1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/Timetable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/Timetable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/aClass.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/aClass.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/classPoint.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/classPoint.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/inFo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/inFo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selclass-client/src/views/point.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/point.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/ClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/controller/ClassController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/IClassService.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/IClassService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/ClassServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-server/src/main/java/com/fkczxt/selclassserver/service/impl/ClassServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/selclass.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/selclass.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/selclasstime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/selclasstime.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/toLogin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/toLogin.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +82,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Users/fk/IdeaProjects/selclass&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/fk/IdeaProjects/selclass/selclass-client/src/assets&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -106,11 +114,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\fk\IdeaProjects\selclass\selclass-client\src\assets" />
       <recent name="D:\Users\15359\IdeaProjects\selclass" />
       <recent name="E:\IdeaProjects\selclass\selclass-server\src\main\java\com\fkczxt\selclassserver\service\impl" />
       <recent name="E:\IdeaProjects\selclass\selclass-server\src\main\java\com\fkczxt\selclassserver\service" />
       <recent name="E:\IdeaProjects\selclass\selclass-server\src\main\java\com\fkczxt\selclassserver\pojo" />
-      <recent name="E:\IdeaProjects\selclass\selclass-server\src\main\resources\mapper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Users\15359\IdeaProjects\selclass" />
@@ -257,6 +265,17 @@
       <workItem from="1681988061493" duration="103000" />
       <workItem from="1681988171588" duration="28000" />
       <workItem from="1681988241341" duration="369000" />
+      <workItem from="1683938832942" duration="84000" />
+      <workItem from="1683943238725" duration="536000" />
+      <workItem from="1683958861545" duration="2075000" />
+      <workItem from="1684061916891" duration="1595000" />
+      <workItem from="1684139079260" duration="34000" />
+      <workItem from="1684139122898" duration="701000" />
+      <workItem from="1684197358480" duration="33000" />
+      <workItem from="1684479488102" duration="2135000" />
+      <workItem from="1684542503204" duration="9000" />
+      <workItem from="1685012161347" duration="5640000" />
+      <workItem from="1685340330043" duration="3485000" />
     </task>
     <task id="LOCAL-00001" summary="登录">
       <created>1675485363964</created>
@@ -384,11 +403,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683871203235</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="结束">
+      <created>1683879812809</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1683879812809</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.lua" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -431,7 +460,8 @@
     <MESSAGE value="课表前端" />
     <MESSAGE value="成绩查询" />
     <MESSAGE value="未打分后端" />
-    <option name="LAST_COMMIT_MESSAGE" value="未打分后端" />
+    <MESSAGE value="结束" />
+    <option name="LAST_COMMIT_MESSAGE" value="结束" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

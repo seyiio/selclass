@@ -3,6 +3,7 @@
   <el-descriptions
       title="个人信息"
       :column="4"
+      height="309"
       border
   >
     <el-descriptions-item label="姓名"><span v-text="name"></span></el-descriptions-item>

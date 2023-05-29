@@ -4,6 +4,7 @@
         :data="classList"
         border
         style="width: 100%"
+        height="309"
         class="courseForm"
         :header-cell-style="{ background: '#5D87EB', color: '#fff' }"
     >

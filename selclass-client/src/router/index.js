@@ -24,6 +24,7 @@ routes:[
     {path:'/home',
         name:'Home',
         component:Home,
+        redirect:'/info',
         children:[{path:'/selclass',
             name:'selclass',
             component:selClass

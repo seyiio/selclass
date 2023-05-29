@@ -1,5 +1,5 @@
 <template>
-<div><el-form ref="loginForm" :model="loginForm" class="loginContainer" :rules="rules">
+<div class="img"><el-form ref="loginForm" :model="loginForm" class="loginContainer" :rules="rules">
 <h3 class="loginTitle">抢课系统</h3>
   <el-form-item prop="username">
     <el-input type="text"  v-model="loginForm.username" placeholder="请输入用户名或学号">
@@ -14,8 +14,7 @@
 
   </el-form-item>
 
-    <el-button type="primary" style="width:100%" @click="submitLogin">登录</el-button>
-
+    <el-button type="success" style="width:100%;background-color:rgb(135,178,96);border-color:rgb(79,161,37);color:rgb(247,255,202)" @click="submitLogin">登录</el-button>
 </el-form></div>
 </template>
 
@@ -73,12 +72,12 @@ export default {
 
 <style >
 .loginContainer{
-  border-radius: 15px;
+  border-radius: 15px ;
   background-clip: padding-box;
-  margin: 180px auto;
-  width: 350px;
+  margin: 300px auto;
+  width: 400px;
   padding:15px 35px 15px 35px ;
-  background: #fff;
+  background: #ffeaea;
   border:1px solid #eaeaea;
   box-shadow: 0 0 25px #cac6c6;
 
@@ -86,5 +85,16 @@ export default {
 .loginTitle{
   margin: 0 auto 40px auto;
   text-align: center;
+  font-family: "Microsoft Tai Le",serif;
+  color: #637341;
+}
+.img{
+
+   background: url("~@/assets/bg1.png") ;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+    background-size: 100% 100%
+
 }
 </style>
