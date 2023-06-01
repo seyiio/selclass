@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d07ce050-7f71-41df-ba6b-5c33dc38cd25" name="变更" comment="结束">
-      <change afterPath="$PROJECT_DIR$/selclass-client/src/assets/bg1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="d07ce050-7f71-41df-ba6b-5c33dc38cd25" name="变更" comment="css">
+      <change afterPath="$PROJECT_DIR$/selclass-client/src/assets/bg2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selclass-client/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/Home.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selclass-client/src/views/Timetable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/Timetable.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selclass-client/src/views/aClass.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/aClass.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selclass-client/src/views/classPoint.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/classPoint.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/inFo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/inFo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/point.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/point.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selclass-client/src/views/selclass.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/selclass.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selclass-client/src/views/selclasstime.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/selclasstime.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selclass-client/src/views/toLogin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/selclass-client/src/views/toLogin.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +90,7 @@
     &quot;project.structure.last.edited&quot;: &quot;SDK&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;5d03f0a9c446fe99de66bf3502c279af&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
@@ -136,7 +131,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SelclassApplication">
+  <component name="RunManager" selected="npm.run">
     <configuration name="selclass.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/selclass.sql" />
       <script-mode>FILE</script-mode>
@@ -275,7 +270,7 @@
       <workItem from="1684479488102" duration="2135000" />
       <workItem from="1684542503204" duration="9000" />
       <workItem from="1685012161347" duration="5640000" />
-      <workItem from="1685340330043" duration="3485000" />
+      <workItem from="1685340330043" duration="5945000" />
     </task>
     <task id="LOCAL-00001" summary="登录">
       <created>1675485363964</created>
@@ -410,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683879812809</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="css">
+      <created>1685344405015</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1685344405015</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +463,8 @@
     <MESSAGE value="成绩查询" />
     <MESSAGE value="未打分后端" />
     <MESSAGE value="结束" />
-    <option name="LAST_COMMIT_MESSAGE" value="结束" />
+    <MESSAGE value="css" />
+    <option name="LAST_COMMIT_MESSAGE" value="css" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

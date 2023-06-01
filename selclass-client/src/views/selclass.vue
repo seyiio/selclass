@@ -1,6 +1,6 @@
 <template>
   <el-table :data="tableData"
-            height="309"
+            height="100%"
             style="width: 100%" v-if="time" ref="table">
     <el-table-column prop="classname" label="课程名称" width="180" />
     <el-table-column prop="point" label="学分" width="180" />

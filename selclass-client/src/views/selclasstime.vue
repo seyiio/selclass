@@ -2,7 +2,7 @@
   <div class="block">
     <span class="demonstration">Default</span>
     <el-form :inline="true" ref="Form"
-             height="309"
+             height="100%"
              :model="form" >
       <el-form-item label="Approved by">
     <el-date-picker

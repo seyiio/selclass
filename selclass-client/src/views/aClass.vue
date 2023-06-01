@@ -2,7 +2,7 @@
     <el-table
             :data="classlist"
             stripe
-            height="309"
+            height="100%"
             style="width: 100%">
         <el-table-column
                 prop="classname"

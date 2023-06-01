@@ -3,7 +3,7 @@
     <el-container id="container">
       <el-header ><h4 class="title">大学生抢课系统</h4></el-header>
       <el-container id="body" >
-        <el-aside width="200px">
+        <el-aside width="200px" >
             <h5 class="mb-2 " style="text-align: center">菜单</h5>
             <el-menu
                 default-active="2"
@@ -101,7 +101,8 @@ store.state.id=dataa.id;
 }
 #container{
   background-clip: padding-box;
-  margin: 5% 10%;
+  margin: 5% 10% ;
+  height: 700px;
   border-radius: 30px ;
   border:1px solid #eaeaea;
 overflow: hidden;
@@ -109,7 +110,17 @@ overflow: hidden;
 }
 .el-main{
   background-color: #d2faff;
-  height: 349px;
+  height: 90%;
+  margin: auto;
+}
+.common-layout{
+
+  background: url("~@/assets/bg2.png") ;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: 100% 100%
+
 }
 </style>
 <script  setup>
