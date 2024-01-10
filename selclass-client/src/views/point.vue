@@ -45,7 +45,7 @@ export default {
     }
   },
 created() {
-    console.log(this.$route.query.id)
+
 getRequest('/class/students/?id='+this.$route.query.id).then(data => {
   if (data) {
     let students = [];

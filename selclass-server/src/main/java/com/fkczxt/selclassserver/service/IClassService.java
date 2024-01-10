@@ -2,6 +2,7 @@ package com.fkczxt.selclassserver.service;
 
 import com.fkczxt.selclassserver.pojo.Class;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.fkczxt.selclassserver.pojo.Cs;
 import com.fkczxt.selclassserver.pojo.RespBean;
 import com.fkczxt.selclassserver.pojo.User;
 import org.springframework.context.annotation.Bean;
@@ -22,4 +23,14 @@ public interface IClassService extends IService<Class> {
    List<Class> getClasses();
    List<User> getstudents(int id);
    RespBean modify(int uid,int cid,Double point);
+
+    Class getclass(int id);
+
+    RespBean changeclass(Class c);
+
+
+
+    RespBean delclass(Class c);
+
+    RespBean deletestu(Cs cs);
 }

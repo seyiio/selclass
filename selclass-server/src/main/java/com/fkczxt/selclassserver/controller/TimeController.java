@@ -32,8 +32,8 @@ public class TimeController {
     @ApiOperation(value = "获取选课时间")
 
     @GetMapping("/selclasstime")
-    public Time gettime(){
-        return iTimeService.gettime();
+    public Time gettime(int id){
+        return iTimeService.gettime(id);
     }
     @ApiOperation(value = "更改选课时间")
 
@@ -42,11 +42,11 @@ public class TimeController {
         String [] time1=time.split("\"");
 
         SimpleDateFormat format=new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.S'Z'");
-
+        int id=Integer.parseInt(time1[8].charAt(1)+"");
         try {
             LocalDateTime time2= LocalDateTime.ofInstant(format.parse(time1[3]).toInstant(), ZoneId.systemDefault()).plusHours(8);
             LocalDateTime time3= LocalDateTime.ofInstant(format.parse(time1[5]).toInstant(), ZoneId.systemDefault()).plusHours(8);
-            return iTimeService.changeTime(new Time(time2,time3));
+            return iTimeService.changeTime(new Time(time2,time3,id));
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }

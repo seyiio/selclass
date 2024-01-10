@@ -60,9 +60,43 @@ public class ClassServiceImpl extends ServiceImpl<ClassMapper, Class> implements
     }
 
     @Override
+    public Class getclass(int id) {
+        return classMapper.selectById(id);
+    }
+
+    @Override
+    public RespBean changeclass(Class c) {
+        if (c.getClassid()==null)
+        {
+            c.setTeacher(userMapper.selectOne(new QueryWrapper<User>().eq("name",c.getTeachername())).getId());
+            if (classMapper.insert(c)>0)
+                return RespBean.success("添加成功");
+            return RespBean.error("添加失败");
+        }
+        if (classMapper.updateById(c)>0)
+            return RespBean.success("修改成功");
+        return RespBean.error("修改失败");
+    }
+
+    @Override
+    public RespBean delclass(Class c) {
+        if (classMapper.deleteById(c.getClassid())>0)
+            return RespBean.success("删除成功");
+        return RespBean.error("删除失败");
+    }
+
+    @Override
+    public RespBean deletestu(Cs cs) {
+        if (csMapper.delete(new QueryWrapper<Cs>().eq("studentid",cs.getStudentid()).eq("classid",cs.getClassid()))>0)
+            return RespBean.success("删除成功");
+        return RespBean.error("删除失败");
+    }
+
+
+    @Override
     public List<Class> getSelClass(Long id) {
         String  a= userMapper.selectById(id).getType();
-        if (a.equals("0")){return null;}else if(a.equals("3")){
+        if (a.equals("0")){return classMapper.selectList(null);}else if(a.equals("3")){
        List<Cs> csList= csMapper.selectList(new QueryWrapper<Cs>().eq("studentid",id));
         List<Class> classes = new ArrayList<>();
         csList.forEach(cs->{

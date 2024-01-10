@@ -32,7 +32,19 @@
               </el-menu-item>
               <el-menu-item index="/aClass" v-show="t">
                 <el-icon><setting /></el-icon>
-                <span>成绩打分</span>
+                <span>课程</span>
+              </el-menu-item>
+                <el-menu-item index="/apply" v-show="!student">
+                    <el-icon><setting /></el-icon>
+                    <span>申请记录</span>
+                </el-menu-item>
+              <el-menu-item index="/userManage" v-show="admin">
+                <el-icon><setting /></el-icon>
+                <span>用户管理</span>
+              </el-menu-item>
+              <el-menu-item index="/classManage" v-show="admin" >
+                <el-icon><setting /></el-icon>
+                <span>课程管理</span>
               </el-menu-item>
             </el-menu>
         </el-aside>
@@ -51,6 +63,8 @@ export default {
   created() {
 getRequest('/admin/info').then(dataa=>{
 store.state.id=dataa.id;
+store.state.type=dataa.type;
+store.state.name=dataa.name;
   if (dataa.type==="0"){
       this.admin=true;
     }else if(dataa.type==="1"){
@@ -110,8 +124,8 @@ overflow: hidden;
 }
 .el-main{
   background-color: #d2faff;
-  height: 90%;
-  margin: auto;
+  height: 520px;
+  margin: 30px 0% ;
 }
 .common-layout{
 

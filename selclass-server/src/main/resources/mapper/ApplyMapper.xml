@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fkczxt.selclassserver.mapper.ApplyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.fkczxt.selclassserver.pojo.Apply">
+        <id column="id" property="id" />
+        <result column="type" property="type" />
+        <result column="teacher" property="teacher" />
+        <result column="classid" property="classid" />
+        <result column="classname" property="classname" />
+        <result column="point" property="point" />
+        <result column="number" property="number" />
+        <result column="time" property="time" />
+        <result column="teachername" property="teachername" />
+        <result column="starttime" property="starttime" />
+        <result column="endtime" property="endtime" />
+        <result column="reason" property="reason" />
+        <result column="applytime" property="applytime" />
+        <result column="status" property="status" />
+        <result column="dealtime" property="dealtime" />
+        <result column="dealperson" property="dealperson" />
+        <result column="dealreason" property="dealreason" />
+    </resultMap>
+
+</mapper>

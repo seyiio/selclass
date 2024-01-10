@@ -26,15 +26,16 @@ public class MQReceiver {
 
 @Autowired
    private CsServiceImpl csService;
-    @Autowired
-    private ClassMapper classMapper;
+
     @RabbitListener(queues = "selclassQueue")
 
     public void receive(String message) {
         log.info("接收消息：" + message);
         SelclassMessage selclassMessage = JsonUtil.jsonStr2Object(message, SelclassMessage.class);
-        csService.selclass(selclassMessage.getCs());
+        if (selclassMessage != null) {
+            csService.selclass(selclassMessage.getCs());
+        }
 
-}
+    }
 
 }

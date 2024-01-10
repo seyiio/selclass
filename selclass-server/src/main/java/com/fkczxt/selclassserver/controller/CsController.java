@@ -82,6 +82,7 @@ public class CsController implements InitializingBean {
     }
 
 
+
     @Override
     public void afterPropertiesSet() throws Exception {
         List<Class> list =iClassService.getClasses();

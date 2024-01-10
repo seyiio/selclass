@@ -1,6 +1,6 @@
 <template>
   <div class="block">
-    <span class="demonstration">Default</span>
+    <span class="demonstration">选课时间</span>
     <el-form :inline="true" ref="Form"
              height="100%"
              :model="form" >
@@ -14,7 +14,25 @@
     />
       </el-form-item>
       <el-form-item>
-    <el-button type="primary" class="button" @click="submit">修改</el-button> </el-form-item>
+    <el-button type="primary" class="button" @click="submit(form)">修改</el-button> </el-form-item>
+    </el-form>
+  </div>
+  <div class="block">
+    <span class="demonstration">成绩录入时间</span>
+    <el-form :inline="true" ref="Form"
+             height="100%"
+             :model="form1" >
+      <el-form-item label="Approved by">
+        <el-date-picker
+            v-model="form1.time"
+            type="datetimerange"
+            range-separator="To"
+            start-placeholder="Start date"
+            end-placeholder="End date"
+        />
+      </el-form-item>
+      <el-form-item>
+        <el-button type="primary" class="button" @click="submit(form1)">修改</el-button> </el-form-item>
     </el-form>
   </div>
 
@@ -27,23 +45,31 @@ import {getRequest, postRequest} from "@/utils/api";
 export default {
   name: "selClassTime",
 created() {
-getRequest('/time/selclasstime').then(data=>{
+getRequest('/time/selclasstime?id=1').then(data=>{
   this.form.time=[new Date(data.starttime),new Date(data.endtime)]
 })
+  getRequest('/time/selclasstime?id=2').then(data=>{
+    this.form1.time=[new Date(data.starttime),new Date(data.endtime)]
+  })
 },
   data(){
     return {
 
       form: {
         time: [new Date(),new Date()],
+        id:1
+      },
+      form1: {
+        time: [new Date(),new Date()],
+        id:2
       }
     }
   },
   methods:{
-    submit(){this.$refs.Form.validate((valid)=>{
+    submit(f){this.$refs.Form.validate((valid)=>{
       if (valid) {
 
-        postRequest('/time/changeTime', this.form).then(resp => {
+        postRequest('/time/changeTime', f).then(resp => {
           if (resp) {
             alert('submit!')
           }
@@ -51,6 +77,7 @@ getRequest('/time/selclasstime').then(data=>{
   }
     })
     }
+
   }
 }
 

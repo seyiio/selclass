@@ -63,4 +63,28 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         return userMapper.selectOne(new QueryWrapper<User>().eq("username",username));
 
     }
+
+    @Override
+    public RespBean changeuser(User user) {
+        if (user.getId()==null){
+            user.setPassword(passwordEncoder.encode("123"));
+            userMapper.insert(user);
+        }
+        else {
+            userMapper.updateById(user);
+        }
+        return RespBean.success("更新成功");
+    }
+
+
+    @Override
+    public RespBean deleteuser(User user) {
+        userMapper.deleteById(user.getId());
+        return RespBean.success("删除成功");
+    }
+
+    @Override
+    public RespBean getusers() {
+        return RespBean.success("",userMapper.selectList(null));
+    }
 }

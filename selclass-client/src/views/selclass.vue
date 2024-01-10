@@ -45,7 +45,7 @@ import store from '@/store/index'
 export default {
 created() {
 
-  getRequest('/time/selclasstime').then(data=>{
+  getRequest('/time/selclasstime?id=1').then(data=>{
     if(new Date(data.starttime).getTime()<=new Date().getTime()&&new Date(data.endtime).getTime()>=new Date().getTime()){
       this.time=true;
       getRequest("/class/getclass").then(data=>{

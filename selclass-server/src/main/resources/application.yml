@@ -10,7 +10,7 @@ spring:
     timeout: 10000ms
     lettuce:
       pool:
-        max-active: 8
+        max-active: -1
         max-wait: 1000ms
         max-idle: 200
   mvc:

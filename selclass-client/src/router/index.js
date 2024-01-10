@@ -8,6 +8,12 @@ import classPoint from "@/views/classPoint.vue";
 import aclass from "@/views/aClass.vue"
 import putpoint from "@/views/point.vue"
 import selclasstime from "@/views/selclasstime.vue";
+import apply from "@/views/ApplyTable.vue";
+import addapply from "@/views/addApply.vue";
+import userManage from "@/views/userManage.vue";
+import changeUser from "@/views/changeUser.vue";
+import classManage from "@/views/classManage.vue";
+import changeClass from "@/views/changeClass.vue";
 const routerHistory = createWebHistory()
 
 const router = createRouter({
@@ -59,7 +65,35 @@ routes:[
                 name:'putpoint',
                 component:putpoint,
 
-            }]
+            },{
+                path:'/apply',
+                name:'apply',
+                component:apply,
+            },{
+                path:'/addapply',
+                name:'addapply',
+                component:addapply,
+            },
+            {
+                path:'/userManage',
+                name:'userManage',
+                component:userManage,
+            },
+            {
+                path:'/changeUser',
+                name:'changeUser',
+                component:changeUser,
+            },{
+                path:'/classManage',
+                name:'classManage',
+                component:classManage,
+            },
+            {
+                path:'/changeClass',
+                name:'changeClass',
+                component:changeClass,
+            }
+            ]
     }  ,
 
 ]})

@@ -1,5 +1,6 @@
 package com.fkczxt.selclassserver.pojo;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.util.Collection;
@@ -28,6 +29,7 @@ public class User implements Serializable , UserDetails {
     private static final long serialVersionUID = 1L;
 
     @ApiModelProperty("学号")
+    @TableId
     private Long id;
 
     private String password;

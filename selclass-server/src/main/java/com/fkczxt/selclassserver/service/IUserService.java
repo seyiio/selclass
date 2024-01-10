@@ -18,4 +18,10 @@ public interface IUserService extends IService<User> {
     RespBean login(String username, String password, HttpServletRequest request);
 
     User getUserByusername(String username);
+
+    RespBean changeuser(User user);
+
+    RespBean deleteuser(User user);
+
+    RespBean getusers();
 }

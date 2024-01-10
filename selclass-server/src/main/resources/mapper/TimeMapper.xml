@@ -4,6 +4,7 @@
 
     <!-- 通用查询映射结果 -->
     <resultMap id="BaseResultMap" type="com.fkczxt.selclassserver.pojo.Time">
+        <id column="id" property="id" />
         <result column="starttime" property="starttime" />
         <result column="endtime" property="endtime" />
     </resultMap>

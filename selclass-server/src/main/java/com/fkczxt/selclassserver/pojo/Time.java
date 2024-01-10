@@ -1,5 +1,6 @@
 package com.fkczxt.selclassserver.pojo;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -25,12 +26,18 @@ import lombok.Setter;
 public class Time implements Serializable {
 
     private static final long serialVersionUID = 1L;
+    @TableId
+    private Integer id;
 
     private LocalDateTime starttime;
 
     private LocalDateTime endtime;
-    public Time(LocalDateTime s,LocalDateTime e){
+    public Time(LocalDateTime s,LocalDateTime e, Integer id){
+        this.id=id;
         starttime=s;
         endtime=e;
+    }
+    public Time(){
+
     }
 }
